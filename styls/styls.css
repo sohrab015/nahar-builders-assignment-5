@@ -1,0 +1,16 @@
+/* english font */
+
+.google-sans-eng {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
+/* scrool smooth */
+
+html {
+    scroll-behavior: smooth;
+}
