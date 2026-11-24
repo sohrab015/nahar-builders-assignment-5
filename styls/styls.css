@@ -14,3 +14,14 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* sections */
+
+section {
+  margin-bottom: 40px;
+}
+
+.pc-20{
+  padding-left: 20px;
+  padding-right: 20px;
+}
