@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Nahar Builders</title>
+  <!-- heat/taitle logo -->
+    <link rel="icon" href="assets/heatTitleLogo.png" type="image/png">
+  <meta name="description" content="Contact Nahar Builders in Bahaddarhat, Chattogram: address, phone, email, hours, map and estimate request form.">
+
+  <!-- Google Font + Google Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+
+  <!-- DaisyUI + Tailwind + SweetAlert -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="tailwind.config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="styls/style.css">
+</head>
+
+<body class="font-body text-slate-800" data-page="contact.html">
+
+  <div id="navbar"></div>
+
+  <section class="bg-ink text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="font-head font-extrabold text-4xl md:text-5xl mb-3">Headquarters & contacts</h1>
+      <p class="text-lg text-slate-300 max-w-2xl">Connect with our senior civil engineers and project managers for estimates and site planning.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="font-head font-bold text-3xl md:text-4xl mb-3">Let's build together</h2>
+          <p class="mb-6">Visit the office at Bahaddarhat or reach us by phone or email.</p>
+          <ul class="space-y-5">
+            <li class="flex gap-3"><span class="material-symbols-outlined text-steel">location_on</span>
+              <span>Nahar Square (1st Floor), Holding No. 6/6,<br>Arakan Road, Bahaddarhat, Chattogram, Bangladesh</span></li>
+            <li class="flex gap-3"><span class="material-symbols-outlined text-steel">call</span>
+              <span><a class="link" href="tel:+8801811447752">+880 1811 44 77 52</a><br><a class="link" href="tel:+8801977464853">+880 1977 46 48 53</a></span></li>
+            <li class="flex gap-3"><span class="material-symbols-outlined text-steel">mail</span>
+              <span><a class="link" href="mailto:info@naharbuilders.com">info@naharbuilders.com</a><br><a class="link" href="mailto:engrjony@gmail.com">engrjony@gmail.com</a></span></li>
+            <li class="flex gap-3"><span class="material-symbols-outlined text-steel">schedule</span>
+              <span>Saturday to Thursday, 9:00 AM to 7:00 PM<br>Friday closed</span></li>
+            <li class="flex gap-3"><span class="material-symbols-outlined text-steel">language</span>
+              <a class="link" href="https://www.naharbuilders.com/" target="_blank" rel="noopener">www.naharbuilders.com</a></li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="bg-concrete rounded-lg p-6 md:p-8 space-y-3" novalidate>
+          <h3 class="font-head font-bold text-2xl">Request a project estimate</h3>
+          <div>
+            <label for="name" class="font-semibold">Full name</label>
+            <input id="name" type="text" autocomplete="name" class="input input-bordered w-full">
+            <p id="name-err" class="text-error text-sm font-semibold min-h-5"></p>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="email" class="font-semibold">Email address</label>
+            <input id="email" type="email" autocomplete="email" class="input input-bordered w-full">
+            <p id="email-err" class="text-error text-sm font-semibold min-h-5"></p>
+          </div>
+          <div>
+            <label for="phone" class="font-semibold">Phone number</label>
+            <input id="phone" type="tel" autocomplete="tel" placeholder="+880 1XXX XXXXXX" class="input input-bordered w-full">
+            <p id="phone-err" class="text-error text-sm font-semibold min-h-5"></p>
+          </div>
+          </div>
+          <div>
+            <label for="subject" class="font-semibold">Subject</label>
+            <select id="subject" class="select select-bordered w-full">
+              <option value="">Select a project type</option>
+              <option>Residential building construction</option>
+              <option>Commercial tower / market</option>
+              <option>Interior design &amp; renovation</option>
+              <option>Healthcare &amp; institutional building</option>
+              <option>Architectural &amp; CDA approval drawing</option>
+              <option>Material import &amp; supply</option>
+            </select>
+            <p id="subject-err" class="text-error text-sm font-semibold min-h-5"></p>
+          </div>
+          <div>
+            <label for="message" class="font-semibold">Message</label>
+            <textarea id="message" rows="4" class="textarea textarea-bordered w-full" placeholder="Project location, plot size and scope"></textarea>
+            <p id="message-err" class="text-error text-sm font-semibold min-h-5"></p>
+          </div>
+          <button type="submit" class="btn bg-amber border-amber text-ink hover:bg-yellow-300">Send request</button>
+        </form>
+      </div>
+      <div class="max-w-6xl mx-auto px-4 mt-12">
+        <iframe title="Map showing Nahar Builders head office at Bahaddarhat, Chattogram" class="w-full h-80 rounded-lg border-0" loading="lazy"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.863116518118!2d91.8415513753556!3d22.368261379639504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd882c974c05d%3A0x6b77ad9ec011d61!2sBahaddarhat%2C%20Chittagong!5e0!3m2!1sen!2sbd!4v1710000000000!5m2!1sen!2sbd"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+
+</html>

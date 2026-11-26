@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Nahar Builders</title>
+  <!-- heat/taitle logo -->
+    <link rel="icon" href="assets/heatTitleLogo.png" type="image/png">
+  <meta name="description" content="Residential, commercial, interior, renovation, supervision, CDA approvals and material supply by Nahar Builders.">
+
+  <!-- Google Font + Google Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+
+  <!-- DaisyUI + Tailwind + SweetAlert -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="tailwind.config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="styls/style.css">
+</head>
+
+<body class="font-body text-slate-800" data-page="services.html">
+
+  <div id="navbar"></div>
+
+  <section class="bg-ink text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="font-head font-extrabold text-4xl md:text-5xl mb-3">What we do</h1>
+      <p class="text-lg text-slate-300 max-w-2xl">Comprehensive architectural design, civil engineering, project management and heavy material logistics.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="py-20 bg-concrete">
+      <div class="max-w-6xl mx-auto px-4">
+        <div id="servicesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="font-head font-bold text-3xl md:text-4xl mb-2">Material import &amp; supply chain</h2>
+        <p class="text-lg text-slate-600 mb-8">Importing certified building components and machinery for high-rise infrastructure.</p>
+        <div id="supplyGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-ink text-slate-300 rounded-lg p-6 md:p-8"></div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-concrete">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+        <div class="card bg-white border-t-4 border-steel"><div class="card-body">
+          <h3 class="card-title font-head text-2xl">Government construction</h3>
+          <p>Nahar Builders has the technical capacity, heavy fleet machinery and compliance certifications to execute government infrastructure, public works and sub-contracting engagements to BNBC standards.</p>
+        </div></div>
+        <div class="card bg-white border-t-4 border-amber"><div class="card-body">
+          <h3 class="card-title font-head text-2xl">Private &amp; commercial projects</h3>
+          <p>The company works with private land owners, real estate developers and commercial entities to design, construct and manage residential towers and commercial centres across Bangladesh.</p>
+        </div></div>
+      </div>
+    </section>
+
+    <section id="fleet" class="py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="font-head font-bold text-3xl md:text-4xl mb-2">Company-owned machinery fleet</h2>
+        <p class="text-lg text-slate-600 mb-6 max-w-3xl">Owning the fleet gives timeline control and removes third-party rental bottlenecks. Machines undergo routine preventive maintenance by certified mechanical engineers.</p>
+        <div id="fleetList" class="flex flex-wrap gap-2 mb-8"></div>
+        <a href="contact.html" class="btn bg-amber border-amber text-ink hover:bg-yellow-300">Request a project consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/services.js"></script>
+</body>
+
+</html>

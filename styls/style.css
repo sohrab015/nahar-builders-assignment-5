@@ -1,0 +1,18 @@
+/* Small custom CSS. Everything else is Tailwind + DaisyUI */
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { font-family: "Source Sans 3", sans-serif; }
+.material-symbols-outlined { font-size: 28px; }
+:focus-visible { outline: 3px solid #f0a81c; outline-offset: 2px; }
+
+/* skyline bars rise once on load */
+.sky-bar {
+  transform-origin: bottom;
+  animation: rise .9s cubic-bezier(.2, .7, .2, 1) both;
+  background-image: repeating-linear-gradient(to top, rgba(255,255,255,.16) 0 2px, transparent 2px 15px);
+}
+@keyframes rise { from { transform: scaleY(.02); } to { transform: scaleY(1); } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .sky-bar { animation: none; }
+}

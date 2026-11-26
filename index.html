@@ -1,962 +1,1057 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civil Construction & Real Estate, Chattogram | Nahar Builders</title>
+  <!-- heat/taitle logo -->
+  <link rel="icon" href="assets/heatTitleLogo.png" type="image/png">
+  <meta name="description"
+    content="Nahar Builders is a construction company in Chattogram, Bangladesh, building residential, commercial and healthcare projects.">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font + Google Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet">
 
-    <title>Nahar Builders | Make Your Life Luxury</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="assets/heatTitleLogo.png" type="image/png">
-
-    <!-- DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styls/styls.css">
-
-    <!-- SweetAlert2 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+  <!-- DaisyUI + Tailwind + SweetAlert -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="tailwind.config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="styls/style.css">
 </head>
 
-<body class="google-sans-eng">
+<body class="font-body text-slate-800" data-page="index.html">
 
-    <!-- navs-->
+  <div id="navbar"></div>
 
-    <header>
+  <main>
 
-        <nav class="fixed left-0 right-0 z-50 ">
+    <!-- hero -->
+    <!-- hero carrosel -->
 
-            <div class="max-w-full mx-auto navbar justify-between
-            bg-white shadow-lg px-5">
+    <section class="relative">
 
-                <!-- logo -->
+      <div id="heroCarousel" class="carousel w-full scroll-smooth">
 
-                <div class="navbar-start flex gap-2 items-center">
+        <!-- slide one -->
+        <div id="item1" class="carousel-item relative w-full min-h-[480px] md:min-h-[580px]">
 
-                    <img class="w-10 rounded-full" src="assets/heatTitleLogo.png" alt="Nahar Builders Logo">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=85"
+            class="absolute inset-0 w-full h-full object-cover" alt="Modern luxury building">
 
-                    <a class="text-xl font-normal">
-                        <span class="text-blue-900 font-bold">Nahar</span>
-                        <span class="text-yellow-600 font-extrabold">
-                            Builders
-                        </span>
-                    </a>
+          <!-- next er duita dark shide er jonno -->
 
-                </div>
+          <!-- Dark Overlay -->
+          <div class="absolute inset-0 bg-black/55"></div>
 
-                <!-- desktom and larg devices main menues -->
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
 
-                <div class="navbar-center hidden md:flex">
+          <!-- Hero Content -->
+          <div class="relative z-10 w-full max-w-[1080px] mx-auto px-5 flex flex-col justify-center py-16 md:py-24">
 
-                    <ul class="menu menu-horizontal px-1">
+            <div class="max-w-[650px] text-white">
 
-                        <!-- Home -->
-                        <li>
-                            <a>Home</a>
-                        </li>
+              <p class="text-[10px] md:text-xs tracking-[3px] font-bold text-yellow-600 mb-4">
+                PREMIER CONSTRUCTION PARTNER IN CHATTOGRAM
+              </p>
 
-                        <!-- about Us -->
-                        <li class="dropdown dropdown-hover">
-                            <a tabindex="0">About Us</a>
-                            <ul tabindex="0" class="dropdown-content menu mt-14 bg-gray-200 rounded-lg shadow p-2 w-52">
-                                <li>
-                                    <a>Company Overview</a>
-                                </li>
-                                <li>
-                                    <a>Certificates & Licenses</a>
-                                </li>
-                            </ul>
-                        </li>
+              <h1 class="text-3xl md:text-5xl font-normal leading-tight mb-4">
+                Building Your Dreams with Trust & Quality
+              </h1>
 
-                        <!-- services -->
-                        <li class="dropdown dropdown-hover">
-                            <a tabindex="0">Services</a>
-                            <ul tabindex="0" class="dropdown-content menu mt-14 bg-gray-200 rounded-lg shadow p-2 w-52">
-                                <li>
-                                    <a>All Services</a>
-                                </li>
-                                <li>
-                                    <a>Machinery & Equipment</a>
-                                </li>
-                            </ul>
-                        </li>
+              <p class="text-sm md:text-base text-gray-200 leading-relaxed max-w-[550px] mb-7">
+                A distinguished engineering & development partner
+                dedicated to architectural distinction, safety
+                compliance, and enduring value.
+              </p>
 
-                        <!-- projects -->
-                        <li class="dropdown dropdown-hover">
-                            <a tabindex="0">Projects</a>
-                            <ul tabindex="0" class="dropdown-content menu bg-gray-200 rounded-lg shadow mt-14 p-2 w-60">
-                                <li>
-                                    <a>All Projects Portfolio</a>
-                                </li>
-                                <li>
-                                    <a>Nahar Specialized Hospital</a>
-                                </li>
-                            </ul>
-                        </li>
+              <!-- CTa Buttons -->
+              <div class="flex flex-wrap gap-3">
 
-                        <!-- contact -->
-                        <li>
-                            <a>Contact</a>
-                        </li>
+                <a href="projects.html"
+                  class="btn btn-sm md:btn-md bg-[#a58a6b] text-white border-none rounded hover:bg-yellow-700">
 
-                    </ul>
+                  <i class="fa-solid fa-building"></i>
+                  EXPLORE PORTFOLIO
 
-                </div>
+                </a>
 
+                <a href="contact.html"
+                  class="btn btn-sm md:btn-md bg-transparent rounded text-white border border-white hover:bg-white hover:text-black">
 
-                <!-- desktop right btns get a quote -->
+                  <i class="fa-solid fa-comments"></i>
+                  CONSULT OUR TEAM
 
-                <div class="navbar-end hidden md:flex">
+                </a>
 
-                    <!--notification icon  -->
-                    <i class="fa-solid fa-bell cursor-pointer"></i>
-
-                    <!-- search icon -->
-                    <i class="ml-5 fa-solid fa-magnifying-glass cursor-pointer"></i>
-
-                    <a
-                        class="btn ml-5 bg-white text-blue-900 rounded-2xl border border-blue-900 font-extrabold hover:bg-blue-900 hover:text-white">
-                        GET A QUOTE
-                    </a>
-
-                </div>
-
-
-                <!-- mobile menue -->
-
-                <div class="navbar-end md:hidden">
-
-                    <div class="dropdown dropdown-end">
-
-                        <!-- menue icon -->
-                        <div tabindex="0" role="button" class="btn btn-ghost text-xl">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-
-                        <!-- mobile menue md devises -->
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-50 p-3 shadow bg-base-100 rounded-box w-56">
-
-                            <!-- home -->
-                            <li>
-                                <a>Home</a>
-                            </li>
-
-                            <!-- about us -->
-                            <li>
-                                <details>
-                                    <summary>About Us</summary>
-                                    <ul>
-                                        <li>
-                                            <a>Company Overview</a>
-                                        </li>
-                                        <li>
-                                            <a>Certificates & Licenses</a>
-                                        </li>
-                                    </ul>
-                                </details>
-                            </li>
-
-                            <!-- service -->
-                            <li>
-                                <details>
-                                    <summary>Services</summary>
-                                    <ul>
-                                        <li>
-                                            <a>All Services</a>
-                                        </li>
-                                        <li>
-                                            <a>Machinery & Equipment</a>
-                                        </li>
-                                    </ul>
-                                </details>
-                            </li>
-
-                            <!-- proeject -->
-                            <li>
-                                <details>
-                                    <summary>Projects</summary>
-                                    <ul>
-                                        <li>
-                                            <a>All Projects Portfolio</a>
-                                        </li>
-                                        <li>
-                                            <a>Nahar Specialized Hospital</a>
-                                        </li>
-                                    </ul>
-                                </details>
-                            </li>
-
-                            <!-- contact -->
-                            <li>
-                                <a>Contact</a>
-                            </li>
-
-                            <!-- get a quote -->
-                            <li class="mt-2">
-                                <a class="btn bg-blue-900 text-white hover:bg-blue-950 justify-center">
-                                    GET A QUOTE
-                                </a>
-                            </li>
-
-
-                        </ul>
-
-                    </div>
-
-                </div>
+              </div>
 
             </div>
 
-        </nav>
+          </div>
 
-    </header>
+          <!-- btm Services -->
+          <div class="absolute bottom-0 left-0 w-full z-10 border-t border-white/20 bg-black/20 backdrop-blur-sm">
 
-    <main>
+            <div class="max-w-[1080px] mx-auto px-5 py-5">
 
-        <!-- hero carrosel -->
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
 
-        <section class="relative">
-
-            <div id="heroCarousel" class="carousel w-full scroll-smooth">
-
-                <!-- slide one -->
-                <div id="item1" class="carousel-item relative w-full min-h-[480px] md:min-h-[580px]">
-
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=85"
-                        class="absolute inset-0 w-full h-full object-cover" alt="Modern luxury building">
-
-                    <!-- next er duita dark shide er jonno -->
-
-                    <!-- Dark Overlay -->
-                    <div class="absolute inset-0 bg-black/55"></div>
-
-                    <!-- Gradient Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
-
-                    <!-- Hero Content -->
-                    <div
-                        class="relative z-10 w-full max-w-[1080px] mx-auto px-5 flex flex-col justify-center py-16 md:py-24">
-
-                        <div class="max-w-[650px] text-white">
-
-                            <p class="text-[10px] md:text-xs tracking-[3px] font-bold text-yellow-600 mb-4">
-                                PREMIER CONSTRUCTION PARTNER IN CHATTOGRAM
-                            </p>
-
-                            <h1 class="text-3xl md:text-5xl font-normal leading-tight mb-4">
-                                Building Your Dreams with Trust & Quality
-                            </h1>
-
-                            <p class="text-sm md:text-base text-gray-200 leading-relaxed max-w-[550px] mb-7">
-                                A distinguished engineering & development partner
-                                dedicated to architectural distinction, safety
-                                compliance, and enduring value.
-                            </p>
-
-                            <!-- CTa Buttons -->
-                            <div class="flex flex-wrap gap-3">
-
-                                <a href="#portfolio"
-                                    class="btn btn-sm md:btn-md bg-[#a58a6b] text-white border-none rounded hover:bg-yellow-700">
-
-                                    <i class="fa-solid fa-building"></i>
-                                    EXPLORE PORTFOLIO
-
-                                </a>
-
-                                <a href="#contact"
-                                    class="btn btn-sm md:btn-md bg-transparent rounded text-white border border-white hover:bg-white hover:text-black">
-
-                                    <i class="fa-solid fa-comments"></i>
-                                    CONSULT OUR TEAM
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- btm Services -->
-                    <div
-                        class="absolute bottom-0 left-0 w-full z-10 border-t border-white/20 bg-black/20 backdrop-blur-sm">
-
-                        <div class="max-w-[1080px] mx-auto px-5 py-5">
-
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-trowel-bricks text-yellow-700"></i>
-                                    CIVIL CONSTRUCTION
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-building text-yellow-700"></i>
-                                    REAL ESTATE DEVELOPMENT
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-helmet-safety text-yellow-700"></i>
-                                    PROJECT SUPERVISION
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-truck-moving text-yellow-700"></i>
-                                    HEAVY EQUIPMENT & MATERIALS
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-trowel-bricks text-yellow-700"></i>
+                  CIVIL CONSTRUCTION
                 </div>
 
-
-                <!-- slid two 2 -->
-                <div id="item2" class="carousel-item relative w-full min-h-[480px] md:min-h-[580px]">
-
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=85"
-                        class="absolute inset-0 w-full h-full object-cover" alt="Modern commercial building">
-
-                    <div class="absolute inset-0 bg-black/55"></div>
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
-
-                    <div
-                        class="relative z-10 w-full max-w-[1080px] mx-auto px-5 flex flex-col justify-center py-16 md:py-24">
-
-                        <div class="max-w-[650px] text-white">
-
-                            <p class="text-[10px] md:text-xs tracking-[3px] font-bold text-yellow-600 mb-4">
-                                PREMIER CONSTRUCTION PARTNER IN CHATTOGRAM
-                            </p>
-
-                            <h1 class="text-3xl md:text-5xl font-normal leading-tight mb-4">
-                                Building Your Dreams with Trust & Quality
-                            </h1>
-
-                            <p class="text-sm md:text-base text-gray-200 leading-relaxed max-w-[550px] mb-7">
-                                A distinguished engineering & development partner
-                                dedicated to architectural distinction, safety
-                                compliance, and enduring value.
-                            </p>
-
-                            <div class="flex flex-wrap gap-3">
-
-                                <a href="#portfolio"
-                                    class="btn btn-sm md:btn-md bg-[#a58a6b] text-white border-none rounded hover:bg-yellow-700">
-                                    <i class="fa-solid fa-building"></i>
-                                    EXPLORE PORTFOLIO
-                                </a>
-
-                                <a href="#contact"
-                                    class="btn btn-sm md:btn-md bg-transparent text-white border border-white rounded hover:bg-white hover:text-black">
-                                    <i class="fa-solid fa-comments"></i>
-                                    CONSULT OUR TEAM
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div
-                        class="absolute bottom-0 left-0 w-full z-10 border-t border-white/20 bg-black/20 backdrop-blur-sm">
-
-                        <div class="max-w-[1080px] mx-auto px-5 py-5">
-
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-trowel-bricks text-yellow-700"></i>
-                                    CIVIL CONSTRUCTION
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-building text-yellow-700"></i>
-                                    REAL ESTATE DEVELOPMENT
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-helmet-safety text-yellow-700"></i>
-                                    PROJECT SUPERVISION
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-truck-moving text-yellow-700"></i>
-                                    HEAVY EQUIPMENT & MATERIALS
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-building text-yellow-700"></i>
+                  REAL ESTATE DEVELOPMENT
                 </div>
 
-
-                <!-- s3 -->
-                <div id="item3" class="carousel-item relative w-full min-h-[480px] md:min-h-[580px]">
-
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=85"
-                        class="absolute inset-0 w-full h-full object-cover" alt="Luxury residential architecture">
-
-                    <div class="absolute inset-0 bg-black/55"></div>
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
-
-                    <div
-                        class="relative z-10 w-full max-w-[1080px] mx-auto px-5 flex flex-col justify-center py-16 md:py-24">
-
-                        <div class="max-w-[650px] text-white">
-
-                            <p class="text-[10px] md:text-xs tracking-[3px] font-bold text-yellow-600 mb-4">
-                                PREMIER CONSTRUCTION PARTNER IN CHATTOGRAM
-                            </p>
-
-                            <h1 class="text-3xl md:text-5xl font-normal leading-tight mb-4">
-                                Building Your Dreams with Trust & Quality
-                            </h1>
-
-                            <p class="text-sm md:text-base text-gray-200 leading-relaxed max-w-[550px] mb-7">
-                                A distinguished engineering & development partner
-                                dedicated to architectural distinction, safety
-                                compliance, and enduring value.
-                            </p>
-
-                            <div class="flex flex-wrap gap-3">
-
-                                <a href="#portfolio"
-                                    class="btn btn-sm md:btn-md bg-[#a58a6b] text-white border-none rounded hover:bg-yellow-700">
-                                    <i class="fa-solid fa-building"></i>
-                                    EXPLORE PORTFOLIO
-                                </a>
-
-                                <a href="#contact"
-                                    class="btn btn-sm md:btn-md bg-transparent text-white border border-white rounded hover:bg-white hover:text-black">
-                                    <i class="fa-solid fa-comments"></i>
-                                    CONSULT OUR TEAM
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div
-                        class="absolute bottom-0 left-0 w-full z-10 border-t border-white/20 bg-black/20 backdrop-blur-sm">
-
-                        <div class="max-w-[1080px] mx-auto px-5 py-5">
-
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-trowel-bricks text-yellow-700"></i>
-                                    CIVIL CONSTRUCTION
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-building text-yellow-700"></i>
-                                    REAL ESTATE DEVELOPMENT
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-helmet-safety text-yellow-700"></i>
-                                    PROJECT SUPERVISION
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-truck-moving text-yellow-700"></i>
-                                    HEAVY EQUIPMENT & MATERIALS
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-helmet-safety text-yellow-700"></i>
+                  PROJECT SUPERVISION
                 </div>
 
-
-                <!--  sl4 -->
-                <div id="item4" class="carousel-item relative w-full min-h-[480px] md:min-h-[580px]">
-
-                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1920&q=85"
-                        class="absolute inset-0 w-full h-full object-cover" alt="Modern architectural interior">
-
-                    <div class="absolute inset-0 bg-black/55"></div>
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
-
-                    <div
-                        class="relative z-10 w-full max-w-[1080px] mx-auto px-5 flex flex-col justify-center py-16 md:py-24">
-
-                        <div class="max-w-[650px] text-white">
-
-                            <p class="text-[10px] md:text-xs tracking-[3px] font-bold text-yellow-600 mb-4">
-                                PREMIER CONSTRUCTION PARTNER IN CHATTOGRAM
-                            </p>
-
-                            <h1 class="text-3xl md:text-5xl font-normal leading-tight mb-4">
-                                Building Your Dreams with Trust & Quality
-                            </h1>
-
-                            <p class="text-sm md:text-base text-gray-200 leading-relaxed max-w-[550px] mb-7">
-                                A distinguished engineering & development partner
-                                dedicated to architectural distinction, safety
-                                compliance, and enduring value.
-                            </p>
-
-                            <div class="flex flex-wrap gap-3">
-
-                                <a href="#portfolio"
-                                    class="btn btn-sm md:btn-md bg-[#a58a6b] text-white border-none rounded hover:bg-yellow-700">
-                                    <i class="fa-solid fa-building"></i>
-                                    EXPLORE PORTFOLIO
-                                </a>
-
-                                <a href="#contact"
-                                    class="btn btn-sm md:btn-md bg-transparent text-white border border-white rounded hover:bg-white hover:text-black">
-                                    <i class="fa-solid fa-comments"></i>
-                                    CONSULT OUR TEAM
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div
-                        class="absolute bottom-0 left-0 w-full z-10 border-t border-white/20 bg-black/20 backdrop-blur-sm">
-
-                        <div class="max-w-[1080px] mx-auto px-5 py-5">
-
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-trowel-bricks text-yellow-700"></i>
-                                    CIVIL CONSTRUCTION
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-building text-yellow-700"></i>
-                                    REAL ESTATE DEVELOPMENT
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-helmet-safety text-yellow-700"></i>
-                                    PROJECT SUPERVISION
-                                </div>
-
-                                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
-                                    <i class="fa-solid fa-truck-moving text-yellow-700"></i>
-                                    HEAVY EQUIPMENT & MATERIALS
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-truck-moving text-yellow-700"></i>
+                  HEAVY EQUIPMENT & MATERIALS
                 </div>
+
+              </div>
 
             </div>
 
+          </div>
+
+        </div>
 
 
-            <!-- CAROUSEL NAVIGATION -->
+        <!-- slid two 2 -->
+        <div id="item2" class="carousel-item relative w-full min-h-[480px] md:min-h-[580px]">
 
-            <div class="flex justify-center items-center gap-4 py-3">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=85"
+            class="absolute inset-0 w-full h-full object-cover" alt="Modern commercial building">
 
-                <!-- Previous -->
-                <button id="prevSlide" class="btn btn-sm btn-circle btn-outline">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
+          <div class="absolute inset-0 bg-black/55"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
 
-                <!-- Slide Numbers -->
-                <div class="flex gap-2">
+          <div class="relative z-10 w-full max-w-[1080px] mx-auto px-5 flex flex-col justify-center py-16 md:py-24">
 
-                    <a href="#item1" class="btn btn-xs btn-neutral rounded-full slide-dot">1</a>
+            <div class="max-w-[650px] text-white">
 
-                    <a href="#item2" class="btn btn-xs btn-neutral rounded-full slide-dot">2</a>
+              <p class="text-[10px] md:text-xs tracking-[3px] font-bold text-yellow-600 mb-4">
+                PREMIER CONSTRUCTION PARTNER IN CHATTOGRAM
+              </p>
 
-                    <a href="#item3" class="btn btn-xs btn-neutral rounded-full slide-dot">3</a>
+              <h1 class="text-3xl md:text-5xl font-normal leading-tight mb-4">
+                Building Your Dreams with Trust & Quality
+              </h1>
 
-                    <a href="#item4" class="btn btn-xs btn-neutral rounded-full slide-dot">4</a>
+              <p class="text-sm md:text-base text-gray-200 leading-relaxed max-w-[550px] mb-7">
+                A distinguished engineering & development partner
+                dedicated to architectural distinction, safety
+                compliance, and enduring value.
+              </p>
 
+              <div class="flex flex-wrap gap-3">
+
+                <a href="projects.html"
+                  class="btn btn-sm md:btn-md bg-[#a58a6b] text-white border-none rounded hover:bg-yellow-700">
+                  <i class="fa-solid fa-building"></i>
+                  EXPLORE PORTFOLIO
+                </a>
+
+                <a href="contact.html"
+                  class="btn btn-sm md:btn-md bg-transparent text-white border border-white rounded hover:bg-white hover:text-black">
+                  <i class="fa-solid fa-comments"></i>
+                  CONSULT OUR TEAM
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="absolute bottom-0 left-0 w-full z-10 border-t border-white/20 bg-black/20 backdrop-blur-sm">
+
+            <div class="max-w-[1080px] mx-auto px-5 py-5">
+
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-trowel-bricks text-yellow-700"></i>
+                  CIVIL CONSTRUCTION
                 </div>
 
-                <!-- Next -->
-                <button id="nextSlide" class="btn btn-sm btn-circle btn-outline">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-building text-yellow-700"></i>
+                  REAL ESTATE DEVELOPMENT
+                </div>
+
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-helmet-safety text-yellow-700"></i>
+                  PROJECT SUPERVISION
+                </div>
+
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-truck-moving text-yellow-700"></i>
+                  HEAVY EQUIPMENT & MATERIALS
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- s3 -->
+        <div id="item3" class="carousel-item relative w-full min-h-[480px] md:min-h-[580px]">
+
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=85"
+            class="absolute inset-0 w-full h-full object-cover" alt="Luxury residential architecture">
+
+          <div class="absolute inset-0 bg-black/55"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+
+          <div class="relative z-10 w-full max-w-[1080px] mx-auto px-5 flex flex-col justify-center py-16 md:py-24">
+
+            <div class="max-w-[650px] text-white">
+
+              <p class="text-[10px] md:text-xs tracking-[3px] font-bold text-yellow-600 mb-4">
+                PREMIER CONSTRUCTION PARTNER IN CHATTOGRAM
+              </p>
+
+              <h1 class="text-3xl md:text-5xl font-normal leading-tight mb-4">
+                Building Your Dreams with Trust & Quality
+              </h1>
+
+              <p class="text-sm md:text-base text-gray-200 leading-relaxed max-w-[550px] mb-7">
+                A distinguished engineering & development partner
+                dedicated to architectural distinction, safety
+                compliance, and enduring value.
+              </p>
+
+              <div class="flex flex-wrap gap-3">
+
+                <a href="projects.html"
+                  class="btn btn-sm md:btn-md bg-[#a58a6b] text-white border-none rounded hover:bg-yellow-700">
+                  <i class="fa-solid fa-building"></i>
+                  EXPLORE PORTFOLIO
+                </a>
+
+                <a href="contact.html"
+                  class="btn btn-sm md:btn-md bg-transparent text-white border border-white rounded hover:bg-white hover:text-black">
+                  <i class="fa-solid fa-comments"></i>
+                  CONSULT OUR TEAM
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="absolute bottom-0 left-0 w-full z-10 border-t border-white/20 bg-black/20 backdrop-blur-sm">
+
+            <div class="max-w-[1080px] mx-auto px-5 py-5">
+
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-trowel-bricks text-yellow-700"></i>
+                  CIVIL CONSTRUCTION
+                </div>
+
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-building text-yellow-700"></i>
+                  REAL ESTATE DEVELOPMENT
+                </div>
+
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-helmet-safety text-yellow-700"></i>
+                  PROJECT SUPERVISION
+                </div>
+
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-truck-moving text-yellow-700"></i>
+                  HEAVY EQUIPMENT & MATERIALS
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!--  sl4 -->
+        <div id="item4" class="carousel-item relative w-full min-h-[480px] md:min-h-[580px]">
+
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1920&q=85"
+            class="absolute inset-0 w-full h-full object-cover" alt="Modern architectural interior">
+
+          <div class="absolute inset-0 bg-black/55"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+
+          <div class="relative z-10 w-full max-w-[1080px] mx-auto px-5 flex flex-col justify-center py-16 md:py-24">
+
+            <div class="max-w-[650px] text-white">
+
+              <p class="text-[10px] md:text-xs tracking-[3px] font-bold text-yellow-600 mb-4">
+                PREMIER CONSTRUCTION PARTNER IN CHATTOGRAM
+              </p>
+
+              <h1 class="text-3xl md:text-5xl font-normal leading-tight mb-4">
+                Building Your Dreams with Trust & Quality
+              </h1>
+
+              <p class="text-sm md:text-base text-gray-200 leading-relaxed max-w-[550px] mb-7">
+                A distinguished engineering & development partner
+                dedicated to architectural distinction, safety
+                compliance, and enduring value.
+              </p>
+
+              <div class="flex flex-wrap gap-3">
+
+                <a href="projects.html"
+                  class="btn btn-sm md:btn-md bg-[#a58a6b] text-white border-none rounded hover:bg-yellow-700">
+                  <i class="fa-solid fa-building"></i>
+                  EXPLORE PORTFOLIO
+                </a>
+
+                <a href="contact.html"
+                  class="btn btn-sm md:btn-md bg-transparent text-white border border-white rounded hover:bg-white hover:text-black">
+                  <i class="fa-solid fa-comments"></i>
+                  CONSULT OUR TEAM
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="absolute bottom-0 left-0 w-full z-10 border-t border-white/20 bg-black/20 backdrop-blur-sm">
+
+            <div class="max-w-[1080px] mx-auto px-5 py-5">
+
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-trowel-bricks text-yellow-700"></i>
+                  CIVIL CONSTRUCTION
+                </div>
+
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-building text-yellow-700"></i>
+                  REAL ESTATE DEVELOPMENT
+                </div>
+
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-helmet-safety text-yellow-700"></i>
+                  PROJECT SUPERVISION
+                </div>
+
+                <div class="flex items-center gap-2 text-white text-[9px] md:text-xs font-bold">
+                  <i class="fa-solid fa-truck-moving text-yellow-700"></i>
+                  HEAVY EQUIPMENT & MATERIALS
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- CAROUSEL NAVIGATION -->
+
+      <div class="flex justify-center items-center gap-4 py-3">
+
+        <!-- Previous -->
+        <button id="prevSlide" class="btn btn-sm btn-circle btn-outline">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Slide Numbers -->
+        <div class="flex gap-2">
+
+          <a href="#item1" class="btn btn-xs btn-neutral rounded-full slide-dot">1</a>
+
+          <a href="#item2" class="btn btn-xs btn-neutral rounded-full slide-dot">2</a>
+
+          <a href="#item3" class="btn btn-xs btn-neutral rounded-full slide-dot">3</a>
+
+          <a href="#item4" class="btn btn-xs btn-neutral rounded-full slide-dot">4</a>
+
+        </div>
+
+        <!-- Next -->
+        <button id="nextSlide" class="btn btn-sm btn-circle btn-outline">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+      </div>
+
+
+    </section>
+
+    <!-- small car ba project er detas er short version -->
+    <section class="px-5 py-16 bg-base-100">
+
+      <div class="max-w-[1200px] mx-auto">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Card 1: Machinery & Fleet -->
+          <a href="services.html#fleet"
+            class="group relative block h-[400px] md:h-[480px] overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+
+            <img src="assets/mechinary&Equepments.jpg" alt="Heavy machinery and logistics"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent"></div>
+
+            <div class="absolute bottom-0 left-0 w-full p-7 text-white">
+
+              <span class="text-amber text-sm font-semibold tracking-[3px] uppercase">
+                Logistics & Fleet
+              </span>
+
+              <h2 class="text-2xl md:text-3xl font-bold mt-3">
+                Machinery & <br> Heavy Fleet
+              </h2>
+
+              <div class="w-12 h-1 bg-amber mt-5 transition-all duration-300 group-hover:w-20"></div>
+
+              <div
+                class="flex items-center gap-2 mt-5 text-sm font-semibold opacity-0 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                Explore Services
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </div>
+
+            </div>
+          </a>
+
+
+          <!-- Card 2: Residential Towers -->
+          <a href="projects.html"
+            class="group relative block h-[400px] md:h-[480px] overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThdDSldPrkACVz1xAEhpmsMNsO-1lIaKkzR8hbeENg9Q&s=10"
+              alt="Residential tower construction"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent"></div>
+
+            <div class="absolute bottom-0 left-0 w-full p-7 text-white">
+
+              <span class="text-amber text-sm font-semibold tracking-[3px] uppercase">
+                Chattogram · Portfolio
+              </span>
+
+              <h2 class="text-2xl md:text-3xl font-bold mt-3">
+                Residential <br> Towers
+              </h2>
+
+              <div class="w-12 h-1 bg-amber mt-5 transition-all duration-300 group-hover:w-20"></div>
+
+              <div
+                class="flex items-center gap-2 mt-5 text-sm font-semibold opacity-0 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                Explore Projects
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </div>
+
+            </div>
+          </a>
+
+
+          <!-- Card 3: Commercial & Healthcare -->
+          <a href="hospital.html"
+            class="group relative block h-[400px] md:h-[480px] overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+
+            <img src="assets/naharHospital.jpg" alt="Modern commercial building"
+              class="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-110" />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent"></div>
+
+            <div class="absolute bottom-0 left-0 w-full p-7 text-white">
+
+              <span class="text-amber text-sm font-semibold tracking-[3px] uppercase">
+                Infrastructure · Landmark
+              </span>
+
+              <h2 class="text-2xl md:text-3xl font-bold mt-3">
+                Commercial & <br> Healthcare
+              </h2>
+
+              <div class="w-12 h-1 bg-amber mt-5 transition-all duration-300 group-hover:w-20"></div>
+
+              <div
+                class="flex items-center gap-2 mt-5 text-sm font-semibold opacity-0 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                Explore Hospital
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </div>
+
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- About preview -->
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+        <img src="https://www.naharbuilders.com/img/about%20us.png" alt="Nahar Builders construction work"
+          class="w-full aspect-[4/3]  rounded-tl-[150px] md:rounded-tl-[200px] rounded-br-[150px] md:rounded-br[300px] rounded-tr-lg rounded-bl-2xl bg-concrete"
+          loading="lazy" onerror="this.classList.add('invisible')">
+        <div>
+          <h2 class="font-head font-bold text-3xl md:text-4xl mb-4">Committed to excellence in civil engineering</h2>
+          <p class="mb-3">Nahar Builders is a trusted construction company based in Chattogram, Bangladesh, committed to
+            delivering high-quality residential and commercial projects.</p>
+          <p class="mb-6">With a strong emphasis on modern design, structural integrity and long-term durability, the
+            company creates spaces that combine functionality with aesthetic appeal.</p>
+          <a href="about.html" class="btn btn-outline">Read our story</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Services Preview / Featured Developments -->
+    <section class="py-20 bg-concrete">
+
+      <div class="max-w-6xl mx-auto px-4">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-12">
+
+          <span class="text-amber text-xs font-bold tracking-[4px] uppercase">
+            What We Do
+          </span>
+
+          <h2 class="font-head text-3xl md:text-4xl mt-3 mb-3">
+            Featured Developments
+          </h2>
+
+          <p class="text-base text-slate-600 max-w-2xl mx-auto">
+            A selection of our construction, residential, infrastructure,
+            and healthcare developments.
+          </p>
+
+        </div>
+
+
+        <!-- Featured Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+          <!-- Card one1: Residential Projects -->
+
+          <a href="projects.html"
+            class="group block bg-base-100 border border-base-300 rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+
+            <!-- Image -->
+            <div class="relative h-[220px] overflow-hidden">
+
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThdDSldPrkACVz1xAEhpmsMNsO-1lIaKkzR8hbeENg9Q&s=10"
+                alt="Residential tower development"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+
+              <!-- Status -->
+              <span
+                class="absolute top-4 right-4 bg-ink text-white text-[10px] font-bold tracking-wider px-3 py-2 uppercase">
+                Completed
+              </span>
 
             </div>
 
 
-        </section>
+            <!-- Content -->
+            <div class="p-6">
 
-        <!-- small card section -->
+              <span class="text-amber text-[11px] font-bold tracking-[2px] uppercase">
+                Residential · Chattogram
+              </span>
 
-        <section class="px-5 ">
+              <h3 class="font-head text-xl mt-3 mb-2 transition-colors">
+                nakeeb Heights
+              </h3>
 
-            <div class="flex mx-auto max-w-[1200px] flex-col md:flex-row items-center justify-center gap-5">
+              <p class="text-sm text-slate-600 leading-6 min-h-[72px]">
+                Modern residential developments designed with
+                structural quality, safety, and contemporary architecture.
+              </p>
 
-                <div class="card bg-base-100 image-full md:h-[560px] w-8/12 md:w-1/3  shadow-sm">
-                    <figure>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Je3tzgaVoRFauKADB27BXqPBpFL9p1YoqOqGAiCngbNLMmaUd1LlWWRZ&s=10"
-                            alt="Building" class="w-full h-full object-cover" />
-                    </figure>
-                    <div class="card-body justify-end">
-                        <div class="absolute bottom-0 left-0 w-full p-6">
-                            <h2 class="card-title">Logistics & Flat</h2>
-                            <p class="text-2xl">Machinery & Heavy Fleet</p>
-                        </div>
-                    </div>
+
+              <!-- Divider -->
+              <div class="border-t border-base-300 mt-5 pt-4">
+
+                <div class="flex justify-between items-center text-[11px] font-semibold tracking-wider uppercase">
+
+                  <span class="text-slate-500">
+                    <span class="text-amber">●</span>
+                    Chattogram
+                  </span>
+
+                  <span class="text-ink transition-colors">
+                    14 STORIES
+                  </span>
+
                 </div>
 
-
-                <div class="card bg-base-100 image-full md:h-[560px] w-8/12 md:w-1/3  shadow-sm">
-                    <figure>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThdDSldPrkACVz1xAEhpmsMNsO-1lIaKkzR8hbeENg9Q&s=10"
-                            alt="Building" class="w-full h-full object-cover" />
-                    </figure>
-                    <div class="card-body justify-end">
-                        <div class="absolute bottom-0 left-0 w-full p-6">
-                            <h2 class="card-title">Chattogram . Portfolio</h2>
-                            <p class="text-2xl">Residential Towers</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card bg-base-100 image-full md:h-[560px] w-8/12 md:w-1/3  shadow-sm">
-                    <figure>
-                        <img src="https://thumbs.dreamstime.com/z/modern-building-23979479.jpg" alt="Building"
-                            class="w-full h-full object-cover" />
-                    </figure>
-                    <div class="card-body justify-end">
-                        <div class="absolute bottom-0 left-0 w-full p-6">
-                            <h2 class="card-title">InsfraStructure . LandMark</h2>
-                            <p class="text-2xl">Commercial & HealthCare</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
 
             </div>
 
-        </section>
+          </a>
 
 
-        <!-- About Us Section -->
 
-        <section class="px-5 md:px-10 bg-gray-100 py-16 md:py-24">
+          <!-- Card 2: Residential Projects -->
 
-            <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+          <a href="projects.html"
+            class="group block bg-base-100 border border-base-300 rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
 
-                <!-- Image -->
+            <!-- Image -->
+            <div class="relative h-[220px] overflow-hidden">
 
-                <div class="relative">
+              <img src="assets/naharHealthCareErOparetionImg.jpg" alt="Residential tower development"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
 
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1000&q=85"
-                        alt="Modern construction building"
-                        class="w-full h-[350px] md:h-[480px] object-cover rounded-l-full shadow-lg" />
-
-                    <div class="absolute bottom-5 right-5 bg-blue-950 text-white p-5 md:p-7 rounded">
-                        <h3 class="text-3xl md:text-4xl font-bold text-yellow-500">01</h3>
-                        <p class="text-xs md:text-sm mt-1">Building Excellence</p>
-                    </div>
-
-                </div>
-
-                <!-- Content -->
-
-                <div>
-
-                    <p class="text-yellow-700 text-xs font-bold tracking-[3px] mb-4">
-                        ABOUT NAHAR BUILDERS
-                    </p>
-
-                    <h2 class="text-3xl md:text-4xl font-extrabold leading-tight mb-6">Building Trust Through Quality &
-                        Innovation</h2>
-
-                    <p class="text-gray-600 text-sm md:text-base leading-7 mb-5">Nahar Builders is dedicated to
-                        delivering quality construction and engineering solutions. We focus on creating reliable,
-                        functional and sustainable spaces through professional planning and execution.
-                    </p>
-
-                    <p class="text-gray-600 text-sm md:text-base leading-7 mb-7">From residential developments to
-                        commercial infrastructure, our commitment is to maintain quality, safety and customer
-                        satisfaction at every stage of a project.</p>
-
-                    <!-- Features -->
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
-
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-shield-halved text-yellow-700 text-2xl"></i>
-                            <div>
-                                <h3 class="text-blue-950 font-bold">Quality First</h3>
-                                <p class="text-gray-500 text-xs">Commitment to standards</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-helmet-safety text-yellow-700 text-2xl"></i>
-                            <div>
-                                <h3 class="text-blue-950 font-bold">Expert Solutions</h3>
-                                <p class="text-gray-500 text-xs">Professional execution</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <a href="#contact" class="btn bg-blue-950 text-white border-none rounded hover:bg-yellow-800">
-                        LEARN MORE
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
+              <!-- Status -->
+              <span
+                class="absolute top-4 right-4 bg-ink text-white text-[10px] font-bold tracking-wider px-3 py-2 uppercase">
+                Ongoing
+              </span>
 
             </div>
 
-        </section>
 
-        <!-- hero 3 -->
+            <!-- Content -->
+            <div class="p-6">
 
+              <span class="text-amber text-[11px] font-bold tracking-[2px] uppercase">
+                HealthCare · Infrastructure
+              </span>
 
-        <section id="portfolio" class="pc-20 py-16 md:py-20 bg-gray-50">
+              <h3 class="font-head text-xl mt-3 mb-2 transition-colors">
+                Nahar Speciallized Hospital
+              </h3>
 
-            <div class="max-w-7xl mx-auto">
-
-                <!-- Section Heading -->
-                <div class="text-center mb-12">
-
-                    <p class="text-yellow-600 text-xs font-bold tracking-[3px] uppercase mb-4">
-                        Our Portfolio
-                    </p>
-
-                    <h2 class="text-3xl md:text-5xl font-bold text-blue-900 mb-5">
-                        Featured Developments
-                    </h2>
-
-                    <div class="w-16 h-1 bg-[#a58a6b] mx-auto mb-5"></div>
-
-                    <p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-                        A selection of our landmark residential, hospitality,
-                        and healthcare structures.
-                    </p>
-
-                </div>
+              <p class="text-sm text-slate-600 leading-6 min-h-[72px]">
+                Modern residential developments designed with
+                structural quality, safety, and contemporary architecture.
+              </p>
 
 
-                <!-- Project Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+              <!-- Divider -->
+              <div class="border-t border-base-300 mt-5 pt-4">
 
+                <div class="flex justify-between items-center text-[11px] font-semibold tracking-wider uppercase">
 
-                    <!-- Project 1 -->
-                    <div
-                        class="bg-white border border-blue-900/10 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                  <span class="text-slate-500">
+                    <span class="text-amber">●</span>
+                    Chattogram
+                  </span>
 
-                        <div class="relative h-64 overflow-hidden">
-
-                            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?utm_source=chatgpt.com" alt="Nakeeb Heights"
-                                class="w-full h-full object-cover hover:scale-105 transition duration-500">
-
-                            <span
-                                class="absolute top-4 right-4 bg-blue-900 text-white text-[10px] font-bold tracking-widest px-4 py-2 uppercase">
-                                Completed
-                            </span>
-
-                        </div>
-
-                        <div class="p-6">
-
-                            <p class="text-yellow-600 text-[10px] font-bold tracking-[2px] uppercase mb-3">
-                                Residential · Chattogram
-                            </p>
-
-                            <h3 class="text-2xl font-bold text-blue-900 mb-3">
-                                Nakeeb Heights
-                            </h3>
-
-                            <p class="text-gray-500 text-sm leading-6 min-h-[72px]">
-                                14-Storied Luxury Residential Tower designed with
-                                state-of-the-art structural safety & modern amenities.
-                            </p>
-
-                            <div class="border-t border-gray-200 mt-5 pt-5 flex items-center justify-between gap-2">
-
-                                <span class="text-gray-600 text-[11px] font-semibold tracking-wider uppercase">
-                                    <i class="fa-solid fa-location-dot text-yellow-600 mr-1"></i>
-                                    Chandgaon R/A
-                                </span>
-
-                                <span class="text-blue-900 text-[11px] font-bold tracking-wider uppercase">
-                                    14 Stories
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Project 2 -->
-                    <div
-                        class="bg-white border border-blue-900/10 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
-
-                        <div class="relative h-64 overflow-hidden">
-
-                            <img src="https://res.klook.com/klook-hotel/image/upload/travelapi/12000000/11560000/11551800/11551771/b2da0f18_z.jpg?utm_source=chatgpt.com" alt="Nahar Specialized Hospital"
-                                class="w-full h-full object-cover hover:scale-105 transition duration-500">
-
-                            <span
-                                class="absolute top-4 right-4 bg-[#a58a6b] text-white text-[10px] font-bold tracking-widest px-4 py-2 uppercase">
-                                Landmark
-                            </span>
-
-                        </div>
-
-                        <div class="p-6">
-
-                            <p class="text-yellow-600 text-[10px] font-bold tracking-[2px] uppercase mb-3">
-                                Healthcare · Infrastructure
-                            </p>
-
-                            <h3 class="text-2xl font-bold text-blue-900 mb-3">
-                                Nahar Specialized Hospital
-                            </h3>
-
-                            <p class="text-gray-500 text-sm leading-6 min-h-[72px]">
-                                19-Storied Modern Healthcare Facility featuring
-                                double basement foundation & clinical infrastructure.
-                            </p>
-
-                            <div class="border-t border-gray-200 mt-5 pt-5 flex items-center justify-between gap-2">
-
-                                <span class="text-gray-600 text-[11px] font-semibold tracking-wider uppercase">
-                                    <i class="fa-solid fa-location-dot text-yellow-600 mr-1"></i>
-                                    Chattogram
-                                </span>
-
-                                <span class="text-blue-900 text-[11px] font-bold tracking-wider uppercase">
-                                    19 Stories
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Project 3 -->
-                    <div
-                        class="bg-white border border-blue-900/10 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
-
-                        <div class="relative h-64 overflow-hidden">
-
-                            <img src="https://res.klook.com/klook-hotel/image/upload/travelapi/12000000/11560000/11551800/11551771/b2da0f18_z.jpg?utm_source=chatgpt.com" alt="Hotel Tower Inn"
-                                class="w-full h-full object-cover hover:scale-105 transition duration-500">
-
-                            <span
-                                class="absolute top-4 right-4 bg-blue-950 text-white text-[10px] font-bold tracking-widest px-4 py-2 uppercase">
-                                Completed
-                            </span>
-
-                        </div>
-
-                        <div class="p-6">
-
-                            <p class="text-yellow-600 text-[10px] font-bold tracking-[2px] uppercase mb-3">
-                                Hospitality · Commercial
-                            </p>
-
-                            <h3 class="text-2xl font-bold text-blue-900 mb-3">
-                                Hotel Tower Inn
-                            </h3>
-
-                            <p class="text-gray-500 text-sm leading-6 min-h-[72px]">
-                                10-Storied 3-Star Hospitality Landmark hosting
-                                110 premium guest rooms and corporate event spaces.
-                            </p>
-
-                            <div class="border-t border-gray-200 mt-5 pt-5 flex items-center justify-between gap-2">
-
-                                <span class="text-gray-600 text-[11px] font-semibold tracking-wider uppercase">
-                                    <i class="fa-solid fa-location-dot text-yellow-600 mr-1"></i>
-                                    Jubilee Road
-                                </span>
-
-                                <span class="text-blue-900 text-[11px] font-bold tracking-wider uppercase">
-                                    10 Stories
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
+                  <span class="text-ink transition-colors">
+                    19 STORIES
+                  </span>
 
                 </div>
 
-
-                <!-- Explore Button -->
-                <div class="text-center mt-12">
-
-                    <a href="#projects"
-                        class="inline-flex items-center gap-3 bg-blue-950 hover:bg-[#a58a6b] text-white px-8 py-4 rounded font-bold text-xs tracking-wider uppercase transition duration-300">
-
-                        <i class="fa-solid fa-table-cells"></i>
-                        Explore All Projects
-
-                    </a>
-
-                </div>
+              </div>
 
             </div>
 
-        </section>
-
-    </main>
-
-    <footer>
-
-    </footer>
+          </a>
 
 
-    <!-- SweetAlert2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!-- carrosel js -->
-    <script src="js/autoCarosel.js"></script>
+          <!-- 3 number card Residential Projects -->
 
+          <a href="projects.html"
+            class="group block bg-base-100 border border-base-300 rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+
+            <!-- Image -->
+            <div class="relative h-[220px] overflow-hidden">
+
+              <img src="assets/hoterTourism.jpg" alt="Residential tower development"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+
+              <!-- Status -->
+              <span
+                class="absolute top-4 right-4 bg-ink text-white text-[10px] font-bold tracking-wider px-3 py-2 uppercase">
+                Upcomming
+              </span>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="p-6">
+
+              <span class="text-amber text-[11px] font-bold tracking-[2px] uppercase">
+                Hospitality · Commercial
+              </span>
+
+              <h3 class="font-head text-xl mt-3 mb-2 transition-colors">
+                Hotel Tower Inn
+              </h3>
+
+              <p class="text-sm text-slate-600 leading-6 min-h-[72px]">
+                Modern residential developments designed with
+                structural quality, safety, and contemporary architecture.
+              </p>
+
+
+              <!-- Divider -->
+              <div class="border-t border-base-300 mt-5 pt-4">
+
+                <div class="flex justify-between items-center text-[11px] font-semibold tracking-wider uppercase">
+
+                  <span class="text-slate-500">
+                    <span class="text-amber">●</span>
+                    JubleeRoad
+                  </span>
+
+                  <span class="text-ink transition-colors">
+                    10 STORIES
+                  </span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </a>
+
+
+        </div>
+
+
+        <!-- Explore All Services Button -->
+        <div class="flex justify-center gap-5 mt-10">
+
+          <a href="projects.html"
+            class="btn bg-ink text-white border-ink hover:bg-amber hover:text-ink hover:border-amber rounded-sm px-7 tracking-wider text-xs">
+
+            <span class="material-symbols-outlined text-base">
+              grid_view
+            </span>
+
+            EXPLORE ALL PROJECTS
+
+          </a>
+
+          <a href="services.html"
+            class="btn bg-ink text-white border-ink hover:bg-amber hover:text-ink hover:border-amber rounded-sm px-7 tracking-wider text-xs">
+
+            <span class="material-symbols-outlined text-base">
+              grid_view
+            </span>
+
+            EXPLORE ALL SERVICES
+
+          </a>
+
+        </div>
+
+
+        <!-- Existing Services Preview -->
+        <div id="servicesPreview" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Featured Projects -->
+    <section class="relative py-24 overflow-hidden isolate">
+
+      <!-- Background Construction Image -->
+      <img src="https://framerusercontent.com/images/zQ59TazLK5XxhtlZVmgamPucWE.png?height=1024&width=1536"
+        alt="Large scale construction site" class="absolute inset-0 w-full h-full object-cover -z-20" />
+
+      <!-- Deep Dark Overlay -->
+      <div class="absolute inset-0 bg-ink/ -z-10"></div>
+
+      <!-- Additional Gradient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-b from-ink/60 via-ink/80 to-ink/95 -z-10"></div>
+
+
+      <div class="max-w-6xl mx-auto px-4 relative z-10">
+
+        <!-- Section Heading -->
+        <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mb-12">
+
+          <div>
+
+            <span class="text-amber text-xs font-bold tracking-[4px] uppercase">
+              Our Portfolio
+            </span>
+
+            <h2 class="font-head font-bold text-3xl md:text-5xl text-white mt-4 mb-4">
+              Featured Developments
+            </h2>
+
+            <p class="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed">
+              A selection of our residential, hospitality and healthcare
+              structures. Building landmarks with quality, precision
+              and excellence.
+            </p>
+
+            <!-- Decorative Line -->
+            <div class="w-16 h-1 bg-amber mt-6"></div>
+
+          </div>
+
+
+          <!-- All Projects Button -->
+          <a href="projects.html"
+            class="btn bg-amber text-ink border-amber hover:bg-yellow-300 hover:border-yellow-300 rounded-sm px-7 font-semibold tracking-wider shrink-0">
+
+            <span class="material-symbols-outlined text-lg">
+              grid_view
+            </span>
+
+            ALL PROJECTS
+
+            <span class="material-symbols-outlined text-lg">
+              arrow_forward
+            </span>
+
+          </a>
+
+        </div>
+
+
+        <!-- Featured Projects Dynamic Cards -->
+        <div id="featuredProjects" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+
+
+        <!-- Bottom Portfolio Link -->
+        <div class="mt-12 flex justify-center">
+
+          <a href="projects.html"
+            class="inline-flex items-center gap-3 text-white/80 hover:text-amber transition-colors duration-300 text-sm font-semibold tracking-widest uppercase">
+
+            Discover Our Complete Portfolio
+
+            <span class="material-symbols-outlined">
+              arrow_forward
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Why Choose Nahar Builders -->
+
+    <section class="relative py-24 bg-ink text-slate-300 overflow-hidden">
+
+      <!-- Background Decorative Elements -->
+      <div class="absolute top-0 right-0 w-96 h-96 bg-amber/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 w-80 h-80 bg-amber/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-6xl mx-auto px-4 relative z-10">
+
+        <!-- Section Heading -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+
+          <span class="text-amber text-xs font-bold tracking-[4px] uppercase">
+            The Nahar Advantage
+          </span>
+
+          <h2 class="font-head font-bold text-3xl md:text-5xl text-white mt-4 mb-5">
+            Why Choose <span class="text-amber">Nahar Builders?</span>
+          </h2>
+
+          <p class="text-base md:text-lg text-slate-400 leading-relaxed">
+            Building with purpose, delivering with precision.
+            Discover the values and strengths that define
+            our commitment to construction excellence.
+          </p>
+
+          <div class="w-16 h-1 bg-amber mx-auto mt-7"></div>
+
+        </div>
+
+
+        <!-- Why Choose Us Dynamic Content -->
+        <div id="whyPreview" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+
+
+        <!-- Bottom CTA -->
+        <div class="mt-16 pt-10 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+
+          <div class="text-center md:text-left">
+
+            <h3 class="font-head text-xl md:text-2xl text-white mb-2">
+              Want to Know More About Us?
+            </h3>
+
+            <p class="text-sm text-slate-400">
+              Explore our company profile, credentials and certifications.
+            </p>
+
+          </div>
+
+          <a href="about.html#credentials"
+            class="btn bg-amber text-ink border-amber hover:bg-yellow-300 hover:border-yellow-300 rounded-sm px-7 font-semibold tracking-wider shrink-0">
+
+            <span class="material-symbols-outlined text-lg">
+              verified
+            </span>
+
+            OUR CREDENTIALS
+
+            <span class="material-symbols-outlined text-lg">
+              arrow_forward
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Premium Project Consultation CTA -->
+
+    <section class="relative py-20 md:py-24 bg-ink overflow-hidden">
+
+      <!-- Decorative Background -->
+      <div class="absolute -top-32 -right-20 w-96 h-96 rounded-full bg-amber/10 blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-32 -left-20 w-80 h-80 rounded-full bg-amber/5 blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-6xl mx-auto px-4 relative z-10">
+
+        <div class="relative border border-white/10 rounded-sm overflow-hidden">
+
+          <!-- Amber Accent -->
+          <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-amber"></div>
+
+          <div class="grid md:grid-cols-[1fr_auto] items-center gap-10 p-7 md:p-12 lg:p-14">
+
+            <!-- CTA Content -->
+            <div>
+
+              <span class="inline-flex items-center gap-2 text-amber text-xs font-bold tracking-[3px] uppercase mb-5">
+                <span class="w-7 h-px bg-amber"></span>
+                Let's Build Something Great
+              </span>
+
+              <h2 class="font-head font-bold text-3xl md:text-4xl lg:text-5xl text-white leading-tight max-w-2xl">
+                Planning Your Next
+                <span class="text-amber">Project?</span>
+              </h2>
+
+              <p class="text-slate-400 text-base md:text-lg mt-5 max-w-xl leading-relaxed">
+                From residential buildings to commercial and healthcare
+                developments, let's discuss your vision and turn it
+                into a reality.
+              </p>
+
+              <!-- Supporting Info -->
+              <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mt-7 text-sm text-slate-300">
+
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-amber text-lg">
+                    location_on
+                  </span>
+                  Chattogram, Bangladesh
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-amber text-lg">
+                    engineering
+                  </span>
+                  Professional Consultation
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- CTA Button -->
+            <div class="flex flex-col items-start md:items-center gap-4">
+
+              <a href="contact.html"
+                class="btn bg-amber border-amber text-ink hover:bg-yellow-300 hover:border-yellow-300 rounded-sm px-7 h-14 text-sm font-bold tracking-wider shadow-lg transition-all duration-300 hover:-translate-y-1">
+
+                REQUEST AN ESTIMATE
+
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                </span>
+
+              </a>
+
+              <span class="text-xs text-slate-500 tracking-wide">
+                Tell us about your project
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/autoCarrosel.js"></script>
 </body>
 
 </html>
